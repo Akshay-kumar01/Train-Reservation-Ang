@@ -1,0 +1,90 @@
+
+/*Putting the background image as cover with left position*/
+
+body {
+  margin: 0;
+  background-image: url('https://img.onmanorama.com/content/dam/mm/en/career-and-campus/top-news/images/2024/1/27/indian-railway-train.jpg/photos/16x9/photo.jpg'); /* Set the path to your image */
+  background-size: cover;  
+  background-position: left; 
+  background-repeat: repeat-y;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+/*displaying rows of each alphabetical row in center*/
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  border: 5px solid #ccc;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/*showing available seats with a different color theme*/
+.available {
+  background-color: #dff0d8;
+}
+
+/*showing booked seats with a different color theme*/
+.booked {
+  background-color: rgb(248, 125, 36);
+  cursor: not-allowed;
+}
+
+.row-label {
+  margin-right: 10px;
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+button {
+  margin: 10px 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
